@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.privacy_policy_screen.PrivacyPolicyFragment">
+
+
+    <!--    profile toolbar-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/fragment_review_page_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:text="@string/top_hotels"
+            android:textColor="@color/profile_text_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/fragmentPrivacyPolicyBackArrowViev"
+            android:layout_width="@dimen/toolbar_leftBackArrow_widthAndSizer"
+            android:layout_height="@dimen/toolbar_leftBackArrow_widthAndSizer"
+            android:background="@drawable/ic_left_arrow_back"/>
+    </androidx.appcompat.widget.Toolbar>
+    <View
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/custom_drawable_shadow"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/fragment_review_page_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_review_page_toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_profile_toolbar">
+
+            <TextView
+                android:id="@+id/ptextView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/Hotel_Voyage_Privacy_Policy"
+                android:textColor="@color/custom_orange"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ptextView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/last_updated_august_text"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ptextView2" />
+
+            <TextView
+                android:id="@+id/ptextView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/information_we_collect"
+                android:textColor="@color/custom_orange"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ptextView3" />
+
+            <TextView
+                android:id="@+id/ptextView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/in_order_to_effectively"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ptextView4" />
+
+            <TextView
+                android:id="@+id/ptextView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/some_of_the_info"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ptextView6" />
+
+            <TextView
+                android:id="@+id/ptextView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/information_you_provide"
+                android:textColor="@color/custom_orange"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ptextView7" />
+
+            <TextView
+                android:id="@+id/ptextView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/information_provided"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ptextView8" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/ptextView9"
+                android:id="@+id/ptextView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/information_you_provide2"
+                android:textColor="@color/custom_orange"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="1194dp"/>
+
+            <TextView
+                android:id="@+id/ptextView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/information_provide2"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ptextView10" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/ptextView11"
+                android:id="@+id/ptextView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/changes_to_privacy"
+                android:textColor="@color/custom_orange"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="1194dp"/>
+
+            <TextView
+                android:id="@+id/ptextView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/changes"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ptextView12" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/ptextView13"
+                android:id="@+id/ptextView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/changes_to_privacy2"
+                android:textColor="@color/custom_orange"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="1194dp"/>
+
+            <TextView
+                android:id="@+id/ptextView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contact"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ptextView14" />
+
+            <TextView
+                android:textColor="@color/lightBlue400"
+                android:layout_marginTop="8dp"
+                android:id="@+id/phoneNumber"
+                android:text="@string/phoneNumber"
+                app:layout_constraintTop_toBottomOf="@id/ptextView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/lightBlue400"
+                android:layout_marginTop="8dp"
+                android:id="@+id/email"
+                android:text="@string/email"
+                app:layout_constraintTop_toBottomOf="@id/phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"
+                android:id="@+id/address"
+                android:text="@string/address"
+                app:layout_constraintTop_toBottomOf="@id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,215 @@
+<resources>
+<!--    String Array of different states in Nigeria-->
+    <string-array name="filter_by">
+        <item>All Hotels</item>
+        <item>Abia</item>
+        <item>Adamawa</item>
+        <item>Akwa-Ibom</item>
+        <item>Anambra</item>
+        <item>Bauchi</item>
+        <item>Bayelsa</item>
+        <item>Benue</item>
+        <item>Borno</item>
+        <item>Cross River</item>
+        <item>Delta</item>
+        <item>Ebonyi</item>
+        <item>Edo</item>
+        <item>Ekiti</item>
+        <item>Enugu</item>
+        <item>Gombe</item>
+        <item>Imo</item>
+        <item>Jigawa</item>
+        <item>Kaduna</item>
+        <item>kano</item>
+        <item>Katsina</item>
+        <item>Kebbi</item>
+        <item>Kogi</item>
+        <item>Kwara</item>
+        <item>Lagos</item>
+        <item>Nasarawa</item>
+        <item>Niger</item>
+        <item>Ogun</item>
+        <item>Ondo</item>
+        <item>Osun</item>
+        <item>Oyo</item>
+        <item>Plateau</item>
+        <item>Rivers</item>
+        <item>Sokoto</item>
+        <item>Taraba</item>
+        <item>Yobe</item>
+        <item>Zamfara</item>
+        <item>Abuja</item>
+
+    </string-array>
+
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="app_name">HBApplicationGroupB</string>
+    <string name="hello_android_group_b_texting_branching_stuff">Hello Android Group B!, texting branching stuff</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="post">Post</string>
+    <string name="tap_to_star_your_rate">Tap to star your rate</string>
+    <string name="write_a_review">Write a review</string>
+    <string name="write_A_review">Write A Review</string>
+    <string name="_4_5">4.5</string>
+    <string name="out_of_5">(OUT OF 5)</string>
+    <string name="_25_ratings">25 Ratings</string>
+    <string name="feb_2020">Feb 2020</string>
+    <string name="top_hotels">Top Hotels</string>
+    <string name="Explore">Explore</string>
+    <string name="kara_james">Kara James</string>
+    <string name="userImage">userImage</string>
+    <string name="edit_profile_text">Edit profile</string>
+    <string name="my_account_profile_text">My Account</string>
+    <string name="bookings_history_profile">Bookings History</string>
+    <string name="help_amp_support_profile"><![CDATA[Help & Support]]></string>
+    <string name="privacy_policy_profile">Privacy Policy</string>
+    <string name="logout_profile">Logout</string>
+    <string name="tool_bar_profile">Profile</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="go_back_to_home">Go Back to Login</string>
+    <string name="your_booking_has_been_confirmed">your booking has been confirmed</string>
+    <string name="book_now">Book Now</string>
+    <string name="booking_details">Booking Details</string>
+    <string name="phone">Phone</string>
+    <string name="booking">Booking</string>
+    <string name="_16_years">16 + years</string>
+    <string name="_1">1</string>
+    <string name="teens">Teens</string>
+    <string name="_12_15_years">12-15 years</string>
+    <string name="children">Children</string>
+    <string name="_2_11_years">2-11 years</string>
+    <string name="infants">Infants</string>
+    <string name="under_2_years">under 2 years</string>
+    <string name="_0">0</string>
+    <string name="adults">Adults</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="getStarted">Get started</string>
+    <string name="help_amp_support"><![CDATA[Help & Support]]></string>
+    <string name="hi_karen_">Hi, karen. How can we be of help?</string>
+    <string name="our_address">Our address</string>
+    <string name="adress">7, Asajon way, Sangotedo, Eti-Osa,Lagos</string>
+    <string name="kcarmen_gmail_com">kcarmen@gmail.com</string>
+    <string name="inquiry_title">Inquiry title</string>
+    <string name="add_your_inquiry">Add your inquiry…</string>
+    <string name="today_07_45am">Today, 07:45am</string>
+    <string name="hotel_name">Sheraton Grand</string>
+    <string name="hotel_location">Marathalli, Banglore, India</string>
+    <string name="hot_lines_str">Hot Lines</string>
+    <string name="dialog_str">Are you sure you want to log out?</string>
+    <string name="Hotel_Voyage_Privacy_Policy"><u><b>Hotel Voyage Privacy Policy</b></u></string>
+    <string name="last_updated_august_text">The privacy of the information you provided to us is of topmost importance. Which is why we drafted below the ways by which we collect, use and protect the information provided to us by you, either by browsing through our apps to see the details of our prestigious hotel or just by you actually booking a room with us.
+You are however not  obligated to provide us with your personal information. Note that if you do not, we might be left with no choice than not to attend to you. Therefore, by using this app, you are aware of what information about you are being collected, stored, and disclosed as set out in the policy below.
+This policy was last updated October 20th, 2021.</string>
+    <string name="information_we_collect"><u><b>Information we Collect</b></u></string>
+    <string name="in_order_to_effectively">The information you gave us: While registering as a new user on the app, you may
+        provides us with some information that reveals your identity. These can also be information collected when booking a
+        room in our hotel and making payment or when updating your user profile. Examples of these information includes; name,
+        email, address, phone number, payment card information amongst others.</string>
+    <string name="some_of_the_info">The information gotten from use of the site: We also collect information from you when you
+        browse through our app or use make use of certain services at the hotel such as wireless internet services.
+        Examples of information collected here are country details, IP address and other features concerning your device may
+        be collected too.</string>
+    <string name="information_you_provide"><u><b>Information you provide</b></u></string>
+    <string name="information_you_provide2"><u><b>How the information collected are protected</b></u></string>
+    <string name="changes_to_privacy"><u><b>Changes to this privacy and policy</b></u></string>
+    <string name="changes_to_privacy2"><u><b>How to contact us</b></u></string>
+    <string name="describe_your_experience_optional">Describe your experience (optional)</string>
+    <string name="ratings">Ratings</string>
+    <string name="hotel_description">There are two methods by which you can do this. First, there is additive mixing, which is when you combine two shades of light together.
+        Since each light is building on each other, it can produce a brighter color. Second, there is subtractive mixing. This is what most people are familiar with, asit’s the process of combining paints or other colored substances to make another hue.
+        This is the most common form of color mixing, but it is somewhat limited, particularly when it comes to making white.</string>
+    <string name="amenities">Amenities</string>
+    <string name="free_wifi">Free WiFi</string>
+    <string name="breakfast">BreakFast</string>
+    <string name="pets">Pets</string>
+    <string name="bars">Bars</string>
+    <string name="pool">Pool</string>
+    <string name="gallery">Gallery</string>
+    <string name="more">More</string>
+    <string name="parkplaza_gmail_com">parkplaza@gmail.com</string>
+    <string name="_91_8272988282">+91-8272988282</string>
+    <string name="price">Price</string>
+    <string name="_6999">$6999</string>
+    <string name="reviews">Reviews</string>
+    <string name="our_services">Our Services</string>
+    <string name="single_deluxe_room">Single Deluxe Room</string>
+    <string name="_69999">$69999</string>
+    <string name="tc"><u>T&amp;C and Privacy Policy.</u></string>
+    <string name="register">Register</string>
+    <string name="already_a_member">Already a member? </string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="here"> here.</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="per_night">per night</string>
+    <string name="_499">499</string>
+    <string name="_96">96%</string>
+    <string name="rating">4 star hotel</string>
+    <string name="top_hotel_name">Sarover Portico</string>
+    <string name="save">Save</string>
+    <string name="explore_hotel_name">Sheraton Grand</string>
+    <string name="explore_hotel_price">$599</string>
+    <string name="filter_by">Filter By</string>
+    <string name="bangalore">Abia</string>
+    <string name="view">View</string>
+    <string name="we_have_deals_for">We have deals for</string>
+    <string name="your_favorite_and_relaxing">your favorite and relaxing</string>
+    <string name="stay">stay.</string>
+    <string name="top_deals">Top Deals</string>
+    <string name="view_all">View All</string>
+    <string name="filter">Filter</string>
+    <string name="sheraton_grand">Sheraton Grand</string>
+    <string name="_599">$599</string>
+    <string name="u_login_u"><u>Login</u></string>
+    <string name="add_review">Add Review</string>
+    <string name="add_New_review">Add New Review</string>
+    <string name="email_us">Email us</string>
+    <string name="payment_options">Payment Options</string>
+    <string name="amount_to_be_paid">Amount to be paid</string>
+    <string name="_6999_00">$6999.00</string>
+    <string name="choose_a_payment_method">Choose a payment method</string>
+    <string name="google_pay">Google Pay</string>
+    <string name="master_card">Master Card</string>
+    <string name="visa">VISA</string>
+    <string name="debit_card">Debit Card</string>
+    <string name="paytm">Paytm</string>
+    <string name="marathalli_bangalore">marathalli, Bangalore</string>
+    <string name="back_to_login">back_to_login</string>
+    <string name="user_email">user_email</string>
+    <string name="account_created_Successfully">Your account has been successfully created, an email verification has been sent to your mail</string>
+    <string name="account_created_successfully">account_created_Successfully</string>
+    <string name="useremail">userEmail</string>
+    <string name="back_to_login2">back to login</string>
+    <string name="information_provided">Information collected by the above means is to ease the process of booking a room prior
+        to stay by sending your details to the hotel and/or communication prior to stay. We also collect information for
+        communication and satisfaction surveys on post-stay so as to get feedbacks on your experience and how to improve our
+        services to serve you better. Also in some cases where we have your permission, we may send you marketing
+        communications such as discounts and latest updates in our hotels.</string>
+    <string name="information_provide2">Here in our company, we take utmost precautions to make sure your information are
+        protected from misuse, unauthorised access, loss, interference and disclosure. However, safety of information can
+        never be completely guaranteed but understand that we put the necessary security safeguards in place to protect it.
+</string>
+    <string name="changes">However we retain the utmost right to make amendments to the privacy and policy as need arises.
+        Please ensure you check the privacy policy from time to time to be abreast of any changes made.
+</string>
+    <string name="contact">If you have any questions or more clarification about the privacy and policy, you can contact us through
+        the contact details below.
+</string>
+    <string name="check_your_email_and_click_on_the_n_confirmation_link_to_continue">Check your email and click on the \n confirmation link to continue</string>
+    <string name="confirm_your_email_address">Confirm Your Email Address</string>
+    <string name="we_sent_an_email_to">we sent an email to:</string>
+    <string name="resend_email">Resend Email</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="address">7, Asajon way, Eti-Osa, Sangotedo, Lagos State, Nigeria.</string>
+    <string name="email"><u>Decagon@gmail.com</u></string>
+    <string name="phoneNumber"><u>09033017453</u></string>
+</resources>

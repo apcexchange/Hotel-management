@@ -1,0 +1,215 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id "org.jmailen.kotlinter"
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id "kotlin-parcelize"
+    id 'androidx.navigation.safeargs'
+}
+apply plugin: 'kotlin-android'
+
+apply plugin: 'dagger.hilt.android.plugin'
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+       // testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        applicationId "com.example.hbapplicationgroupb"
+        minSdk 22
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildFeatures{
+        viewBinding true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+kotlinter {
+    ignoreFailures = false
+    indentSize = 4
+    reporters = ['checkstyle', 'plain']
+    experimentalRules = false
+    disabledRules = ["no-wildcard-imports"]
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //coroutine
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation "com.squareup.okhttp3:logging-interceptor:4.7.2"
+
+    //ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
+
+    // Lifecycle components
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.3.1"
+
+    //dexter multiple permission request
+    implementation 'com.karumi:dexter:6.2.3'
+
+    //work manager
+    implementation("androidx.work:work-runtime-ktx:2.7.0")
+
+    //to use LiveData to convert flow
+    def lifecycle_version = "2.2.0"
+
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+
+    // Activity KTX for viewModels()
+    implementation "androidx.activity:activity-ktx:1.3.1"
+
+    // Kotlin navigation implementation
+    implementation("androidx.navigation:navigation-fragment-ktx:2.3.5")
+    implementation("androidx.navigation:navigation-ui-ktx:2.3.5")
+
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    
+    //borja_bravo expandable textView Library = https://github.com/bravoborja/ReadMoreTextView
+    implementation 'com.borjabravo:readmoretextview:2.1.0'
+
+    // Espresso
+    def androidx_test_espresso = "3.1.0"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$androidx_test_espresso"
+    androidTestImplementation "androidx.test.espresso:espresso-contrib:$androidx_test_espresso"
+    implementation "androidx.test.espresso:espresso-idling-resource:$androidx_test_espresso"
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.4.0')
+
+    // androidx.test
+    def androidx_test = "1.1.0"
+    androidTestImplementation "androidx.test:runner:$androidx_test"
+    androidTestImplementation "androidx.test:core:$androidx_test"
+    androidTestImplementation "androidx.test.ext:junit-ktx:$androidx_test"
+
+
+    //Fragment testing dependency
+    def fragment_version = "1.4.0-alpha09"
+    debugImplementation "androidx.fragment:fragment-testing:$fragment_version"
+
+    //espresso rule and runner
+    androidTestImplementation('androidx.test:runner:1.4.0')
+    androidTestImplementation('androidx.test:rules:1.4.0')
+
+    //Test fragments
+    debugImplementation "androidx.fragment:fragment-testing:1.4.0-alpha10"
+    implementation "androidx.fragment:fragment-ktx:1.4.0-alpha10"
+
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.4.0"
+    androidTestImplementation "androidx.test.espresso:espresso-contrib:3.4.0"
+
+    // androidx.test
+    androidTestImplementation "androidx.test:runner:1.4.0"
+    androidTestImplementation "androidx.test:core:1.4.0"
+    androidTestImplementation "androidx.test.ext:junit-ktx:1.1.3"
+
+    // Feature module Support
+    implementation("androidx.navigation:navigation-dynamic-features-fragment:2.3.5")
+
+    //Navigation Tests
+    androidTestImplementation("androidx.navigation:navigation-testing:2.3.5")
+
+    // Jetpack Compose Integration
+    implementation("androidx.navigation:navigation-compose:2.4.0-alpha10")
+
+    //Multidex dependency to enable app accommodate all our methods
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    //Bottom Sheet
+    implementation 'com.google.android.material:material:1.5.0-alpha04'
+
+    //Prime Date for calendar bottomSheet Dependencies
+    implementation 'com.aminography:primedatepicker:3.4.0'
+    implementation 'com.aminography:primecalendar:1.3.2'
+
+    //Enable multidex for apps with over 64K methods
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation "androidx.core:core-ktx:1.6.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+
+    // Dependencies for Room DataBase
+    kapt "androidx.room:room-compiler:2.3.0"
+    implementation "androidx.room:room-runtime:2.3.0"
+    implementation "androidx.room:room-ktx:2.3.0"
+    androidTestImplementation "androidx.room:room-testing:2.3.0"
+
+    implementation 'androidx.room:room-common:2.3.0'
+
+
+    annotationProcessor "com.google.dagger:dagger-android-processor:2.11"
+
+
+    //Fragment Test Ui
+    //debugImplementation("androidx.fragment:fragment-testing:1.3.6")
+
+    //Hilt dependencies
+    implementation "com.google.dagger:hilt-android:2.38.1"
+    kapt "com.google.dagger:hilt-android-compiler:2.38.1"
+
+    //hilt dependency Integration with the Jetpack navigation library
+    implementation 'androidx.hilt:hilt-navigation-fragment:1.0.0'
+
+
+    //For getting image from gallery and permissions
+//    implementation 'com.github.dhaval2404:imagepicker:1.8'
+//    implementation 'com.karumi:dexter:6.2.2'
+
+    //user permission
+    implementation 'com.karumi:dexter:6.2.2'
+//coil
+    implementation "io.coil-kt:coil:1.1.1"
+
+
+    // Core library
+   // androidTestImplementation 'androidx.test:core:1.4.0'
+
+    // AndroidJUnitRunner and JUnit Rules
+  //  androidTestImplementation 'androidx.test:runner:1.4.0'
+  //  androidTestImplementation 'androidx.test:rules:1.4.0'
+
+}
+
+// Allow references to generated code
+kapt {
+    correctErrorTypes true
+}
+
